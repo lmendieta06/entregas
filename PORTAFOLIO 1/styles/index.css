@@ -1,0 +1,305 @@
+/* Importaciones */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ruluko&display=swap');
+/*   font-family: "Ruluko", sans-serif; */
+@import url('https://fonts.cdnfonts.com/css/rubik-one');
+/* font-family: 'Rubik One', sans-serif;*/
+
+/* Variables - Pseudoclase */
+:root{
+    --tipografiaTexto: "Ruluko", sans-serif;
+    --tipografiaTitulos: 'Rubik One', sans-serif;
+    --colorFondo:#E1E0E0;
+    --colorNav:#BED7DC;
+    --colorTitulo:#92C7CF;
+    --colorTexto:#A9A9A9;
+}
+
+body{
+    background-color: var(--colorFondo);
+    font-family: var(--tipografiaTexto);
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+*{
+    /* Ajuste de margen y padding */
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 30vh;
+    /* border: 20px solid red; */
+}
+
+.menuNav{
+    background-color: var(--colorNav);
+    width: 100%;
+    height: 65%;
+}
+
+.listaNav{
+    /* Poner uno al lado del otro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    
+}
+
+.listaNav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+}
+
+/* MAIN */
+main{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    /* hacer que cada seccion quede una debajo de
+    la otra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h1, h2{
+    font-family: var(--tipografiaTitulos);
+    color: var(--colorTitulo);
+    text-transform: uppercase;
+}
+
+/* Acerca de mi */
+.Acerca{
+    /* border: 2px solid blue; */
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap:40px
+}
+
+.Acerca img{
+    width: 300px;
+    height: 400px;
+
+}
+
+.infoAcerca{
+    margin: 40px;
+    width: 50%;
+    height: 200px;
+
+}
+
+.infoAcerca p{
+    margin-top:30px ;
+    width: 382px ;
+    color: var(--colorTexto);
+}
+
+.infoAcerca h1{
+    font-size: 35px;
+}
+/* infoAcademica */
+.infoAcademica{
+    border: 10px solid white;
+    width: 80%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.infoEducon{
+    width: 30%;
+    height: 400px;
+    margin: 50px;
+}
+
+.infoTitulos{
+    background-color: var(--colorNav);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.infoTitulos h2{
+    color: white;
+}
+
+.infoEducon li{
+    list-style: none;
+    color: var(--colorTexto);
+    margin-left: 10px;
+}
+
+.infoEducon ul{
+    color: var(--colorTitulo);
+    margin-left: 30px;
+}
+/* Habilidades */
+.habilidades{
+    /* border: 2px solid green; */
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid white;
+    padding: 20px;
+}
+
+.habilidadesImg{
+    width: 80%;
+    /* organizar en filas y columnas */
+    display: grid;
+    /* Para las filas */
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    /* border: 3px solid blue; */
+    
+}
+
+.habilidadesImg div{
+    /* border: 1px solid pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+
+
+}
+
+.habilidadesImg i{
+    color: var(--colorTexto);
+    font-size: 80px;
+}
+
+.habilidadesImg h3{
+    color: var(--colorTitulo);
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.habilidadesImg h3{
+    color: var(--colorTitulo);
+    font-size: 30px;
+    text-align: center;
+}
+
+.habilidades h2{
+    font-size: 50px;
+}
+
+/* Servicios */
+.servicios{
+    border: 10px solid white;
+    width: 80%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.servicios article{
+    display: grid;
+    /* Para las filas */
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 60px;
+}
+
+.servicios div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#serviciosTitulos{
+    text-align: center;
+    font-weight:lighter;
+    text-transform: initial;
+}
+
+.servicios h3{
+    color: var(--colorTexto);
+}
+
+#habilidadesTituloprincipal{
+    font-size: 50px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #BED7DC;
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+}
+
+.footerContenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:600px;
+}
+footer img{
+    /* border: 1px solid black; */
+    padding: 0;
+    width: 200px;
+    height: 200px;
+}
+
+.redesSociales{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    gap:5px;
+}
+#redes{
+    display: flex;
+    gap: 5px;
+}
+
+#redes a, #redes h3, #redes i{
+    color: white;
+
+}
+
+footer h2{
+    color: white;
+
+}
+

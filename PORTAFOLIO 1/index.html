@@ -15,8 +15,8 @@
     <!-- header -->
     <header>
         <!-- Menu navegador -->
-        <nav>
-            <ul>
+        <nav class="menuNav">
+            <ul class="listaNav">
                 <li><a href="#acerca">Acerca de mi</a></li>
                 <li><a href="#infoAcademica">Educacion</a></li>
                 <li><a href="#infoAcademica">Conocimientos</a></li>
@@ -31,11 +31,11 @@
     </header>
     <!-- main -->
     <main>
-        <section id="acerca">
+        <section id="acerca" class="Acerca">
             <div>
                 <img src="./assets/yo.jpg" alt="foto">
             </div>
-            <div>
+            <div class="infoAcerca">
                 <h1>Soy Laura Sofia Mendieta Garzon</h1>
                 <p>
                     Soy actual estudiante de ingenieria de sistemas en la 
@@ -46,10 +46,12 @@
                 </p>
             </div>
         </section>
-        <section id="infoAcademica">
+        <section id="infoAcademica" class="infoAcademica">
             
-            <article>
+            <article class="infoEducon">
+                <div class="infoTitulos">
                     <h2>Educacion</h2>
+                </div>
                 <ul>
                     <h3>Tecnico en contabilidad y finanzas</h3>
                     <li>Servicio Nacional de Aprendizaje</li>
@@ -67,8 +69,10 @@
 
                 </ul>
             </article>
-            <article>
-                <h2>Conocimientos</h2>
+            <article class="infoEducon">
+                <div class="infoTitulos"> 
+                    <h2>Conocimientos</h2>
+                </div>
                 <ul>
                     <h3>Desarrollo de aplicaciones</h3>
                     <li>Java y Python</li>
@@ -93,73 +97,77 @@
             </article>
            
         </section>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <div>
-                <i class="bi bi-code-square"></i>
-                <h3>Logica de programacion</h3>
-            </div>
-            <div>
-                <i class="bi bi-book-half"></i>
-                <h3>Segundo idioma (Ingles)</h3>
-            </div>
-            <div>
-                <i class="bi bi-person-raised-hand"></i>
-                <h3>Liderazgo</h3>
-            </div>
-            <div>
-                <i class="bi bi-megaphone-fill"></i>
-                <h3>Comunicacion acertiva</h3>
-            </div>
-            <div>
-                <i class="bi bi-lightbulb"></i>
-                <h3>Creatividad</h3>
+        <section id="habilidades" class="habilidades">
+            <h2 >Habilidades</h2>
+            <div class="habilidadesImg">
+                <div>
+                    <i class="bi bi-code-square"></i>
+                    <h3>Logica de programacion</h3>
+                </div>
+                <div>
+                    <i class="bi bi-book-half"></i>
+                    <h3>Segundo idioma (Ingles)</h3>
+                </div>
+                <div>
+                    <i class="bi bi-person-raised-hand"></i>
+                    <h3>Liderazgo</h3>
+                </div>
+                <div>
+                    <i class="bi bi-megaphone-fill"></i>
+                    <h3>Comunicacion acertiva</h3>
+                </div>
+                <div>
+                    <i class="bi bi-lightbulb"></i>
+                    <h3>Creatividad</h3>
+                </div>
             </div>
         </section>
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <div>
-                <h2>Desarrollo de aplicaciones</h2>
-                <h3>Java y Python</h3>
-            </div>
-            <div>
-                <h2>Desarrollo web</h2>
-                <h3>CSS3, HTML5 y Javascript</h3>
-            </div>
-            <div>
-                <h2>Creacion y manejo de bases de datos</h2>
-                <h3>MySQL</h3>
-            </div>
+        <section id="servicios" class="servicios">
+            <h2 id="habilidadesTituloprincipal">Servicios</h2>
+            <article>
+                <div>
+                    <h2 id="serviciosTitulos">Desarrollo de aplicaciones</h2>
+                    <h3>Java y Python</h3>
+                </div>
+                <div>
+                    <h2 id="serviciosTitulos">Desarrollo web</h2>
+                    <h3>CSS3, HTML5 y Javascript</h3>
+                </div>
+                <div>
+                    <h2 id="serviciosTitulos">Creacion y manejo de bases de datos</h2>
+                    <h3>MySQL</h3>
+                </div>
+            </article>
         </section>
     </main>
     <!-- footer -->
     <footer id="contacto">
-        <section>
+        <section class="footerContenedor">
             <article>
                 <h2>Contactarme</h2>
 
                 <div class="redesSociales">
-                    <div>
+                    <div id="redes">
                         <i class="bi bi-telephone-fill"></i>
                         <h3>Telefono: +57 3193408310</h3>
                     </div>
-                    <div>
+                    <div id="redes">
                         <a href="mailto:laumendieta06@gmail.com"><i class="bi bi-envelope-at-fill"></i></a> 
                         <h3>Correo</h3>
                     </div>
-                    <div>
+                    <div id="redes">
                         <a href="https://api.whatsapp.com/send?phone=3193408310"><i class="bi bi-whatsapp"></i>
                         </a> 
                         <h3>Whatsapp</h3>
                     </div>
-                    <div>
+                    <div id="redes">
                         <a href="https://github.com/lmendieta06"><i class="bi bi-github" ></i></a>
                         <h3>GitHub</h3>
                     </div>
 
                 </div>
             </article>
-            <img src="" alt="">
+            <img src="./assets/tinywow_change_bg_photo_55503525.png" alt="">
         </section>
     </footer>
 </body>
