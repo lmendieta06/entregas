@@ -376,17 +376,34 @@ footer h2{
     .listaNav{
         display: flex;
         justify-content:space-between;
+        align-items: center;
     }
 
     /* MAIN */
+    body{
+        /* border: 2px solid red; */
+        width: 200%;
+        margin-right: 0;
+        /* margin-left: 50px; */
+    }
+    main{
+        /* border: 2px solid red; */
+        width: 100%;
+        margin-right: 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     /* ACERCA */
 
     .Acerca{
-        margin-left: 100px;
+        /* margin-left: 100px; */
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 0;
         /* border: 2px solid black; */
     }
@@ -411,13 +428,19 @@ footer h2{
 
     }
 
+    .infoAcerca img{
+        width: 100px;
+    }
+
     /* INFO ACADEMICA */
+
 
     .infoAcademica{
         width: 100%;
-        margin-left: 150px;
+        /* margin-left: 150px; */
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .infoEducon{
@@ -431,7 +454,7 @@ footer h2{
 
     .habilidades{
         width: 100%;
-        margin-left: 100px;
+        /* margin-left: 100px; */
     }
     .habilidadesImg{
         display: flex;
@@ -439,15 +462,19 @@ footer h2{
         flex-direction: column;
         
     }
-
+    /* PROYECTOS */
     .proyectos{
         width: 100%;
-        margin-left: 100px;
+        /* margin-left: 100px; */
     }
 
+    .textCarrusel{
+        color: #121212;
+    }
+    /* SERVICIOS */
     .servicios{
         width: 100%;
-        margin-left: 150px;
+        /* margin-left: 150px; */
     }
 
     .contenedorServ{
@@ -458,6 +485,6 @@ footer h2{
     /* footer */
     footer{
         /* border: 2px solid red; */
-        width: 100vw;
+        width: 100%;
     }
 }
